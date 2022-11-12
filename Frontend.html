@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<script>
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<body>
+
+    <div id="bracelet">
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+
+    <br/><br/><br/><br/><br/>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag1" src= "http://upload.wikimedia.org/wikipedia/commons/4/4f/Button-Red.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag2" src= "http://upload.wikimedia.org/wikipedia/commons/a/a8/Button-Blue.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag3" src= "http://upload.wikimedia.org/wikipedia/commons/c/ca/Button-Lightblue.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag4" src= "http://upload.wikimedia.org/wikipedia/commons/b/ba/Button-Purple.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag5" src= "http://upload.wikimedia.org/wikipedia/commons/6/68/Button-Orange.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+                    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag6" src= "http://upload.wikimedia.org/wikipedia/commons/d/dc/Button-Green.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+                        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag7" src= "http://upload.wikimedia.org/wikipedia/commons/4/4f/Button-Red.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag8" src= "http://upload.wikimedia.org/wikipedia/commons/a/a8/Button-Blue.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag9" src= "http://upload.wikimedia.org/wikipedia/commons/c/ca/Button-Lightblue.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag10" src= "http://upload.wikimedia.org/wikipedia/commons/b/ba/Button-Purple.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag11" src= "http://upload.wikimedia.org/wikipedia/commons/6/68/Button-Orange.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
+
+                    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<img id="drag12" src= "http://upload.wikimedia.org/wikipedia/commons/d/dc/Button-Green.svg" draggable="true" ondragstart="drag(event)" width="50" height="50">
+</div>
